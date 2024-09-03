@@ -1,0 +1,1256 @@
+# Copyright (C) 2018 Glossary
+# This file is distributed under the same license as the Glossary package.
+# mte90 <mte90net@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: Glossary 2.0.x\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/glossary\n"
+"POT-Creation-Date: 2024-04-09 17:43+0200\n"
+"PO-Revision-Date: 2024-04-09 17:55+0200\n"
+"Last-Translator: Mte90 <mte90net@gmail.com>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;esc_html_e;esc_html__;esc_attr_e;"
+"esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Domain: glossary-by-codeat\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: backend/Enqueue.php:75 integrations/Elementor.php:129
+msgid "Error with the ChatGPT request!"
+msgstr "Errore con la richiesta a ChatGPT!"
+
+#: backend/Enqueue.php:76 integrations/Elementor.php:129
+msgid ""
+"Please provide a title to automatically generate the content for the term."
+msgstr ""
+"Inserisci un titolo per generare automaticamente il contenuto per il termine."
+
+#: backend/Enqueue.php:77 integrations/Elementor.php:129
+msgid "Waiting for server response"
+msgstr "In attesa di una risposta del server"
+
+#: backend/Enqueue.php:80 integrations/Elementor.php:129
+msgid ""
+"Please provide a glossary term definition for '[replaceme]' and divide the "
+"text into paragraphs. Plain text only, do not use markdown or HTML. Ensure "
+"that the content consists of at least 350 words."
+msgstr ""
+"Genera un termine da glossario per \"[replaceme]\" e dividi il testo in "
+"paragrafi. Testo puro solamente, non utilizzare markdown o HTML. Assicurati "
+"che il contenuto abbia un massimo di 350 parole."
+
+#: backend/ImpExp.php:106
+msgid "Please upload a valid .json file"
+msgstr "Carica un file json valido prima di procedere"
+
+#: backend/ImpExp.php:112
+msgid "Please upload a file to import"
+msgstr "Carica un file da importare"
+
+#: backend/ImpExp.php:131
+msgid "Failed to import the settings."
+msgstr "Importazione fallita delle opzioni."
+
+#: backend/Notices.php:51
+msgid ""
+"This website has the Advanced Custom Fields plugin that is <a href=\"https://"
+"docs.codeat.co/glossary/faq/#can-i-use-glossary-with-acf\">supported by the "
+"Glossary plugin</a>."
+msgstr ""
+"Il sito utilizza Advanced Custom Fields che <a href=\"https://docs.codeat.co/"
+"glossary/faq/#can-i-use-glossary-with-acf\">è supportato da Glossary</a>."
+
+#: backend/Notices.php:62
+msgid ""
+"Dear user, read the documentation and be sure to not miss all the glossary "
+"pro features that comes along with your license. <a href=\"http://docs."
+"codeat.co/glossary/shortcodes/#glossary-index-premium\">E.g. How to create "
+"an alphabetical ordered Index.</a>."
+msgstr ""
+"Ciao utente, leggi la documentazione e verifica di non esserti perso tutte "
+"le funzionalità della versione pro della tua licenza. <a href=\"http://docs."
+"codeat.co/glossary/shortcodes/#glossary-index-premium\">Es. Come creare un "
+"indice alfabetico ordinato.</a>."
+
+#: backend/Notices.php:78
+#, php-format
+msgid ""
+"Hey, we noticed that one of your pages is using the same slug as the "
+"Glossary plugin Archive post type. This can create a conflict. To fix it, <a "
+"href=\"http://docs.codeat.co/glossary/advanced-settings/#disable-archives-in-"
+"the-frontend\">disable the archive in the frontend</a> or change the <a "
+"href=\"%s\">slug of your page</a>."
+msgstr ""
+"Hei, abbiamo notato che una delle tue pagine utilizza lo stesso slug del "
+"post type del plugin Glossary. Questa cosa potrebbe creare un conflitto. Per "
+"sistemarlo, <a href=\"http://docs.codeat.co/glossary/advanced-settings/"
+"#disable-archives-in-the-frontend\">disabillita l'archivio nel frontend</a> "
+"o cambia lo <a href=\"%s\">slug della pagina</a>."
+
+#: backend/Notices.php:105
+msgid ""
+"Hey, we noticed that you are in a multi-site network. Glossary now supports "
+"WordPress multi-site feature!<br>Please, read our <a href=\"http://docs."
+"codeat.co/glossary/faq/#are-you-compatible-with-wordpress-"
+"multisite\">documentation</a>."
+msgstr ""
+"Hei, abbiamo notato che stai utilizzando un multisito. Glossary ora supporta "
+"la funzione multi sito!<br>Leggi la <a href=\"http://docs.codeat.co/glossary/"
+"faq/#are-you-compatible-with-wordpress-multisite\">documentazione</a>."
+
+#: backend/Notices.php:120
+msgid ""
+"Hey! It's been a little while that you've been using Glossary for WordPress. "
+"You might not realize it, but user reviews are such a great help to us. We "
+"would be so grateful if you could take a minute to leave a review on "
+"WordPress.org.<br>Many thanks in advance :)<br>"
+msgstr ""
+"Hey! É da un po' di tempo che stai usando Glossary per WordPress. Forse non "
+"lo sai ma le recensioni sono un grande aiuto per noi. Ci sarebbe molto utile "
+"se potessi dedicare un minuto per lasciare una recensione su WordPress.org."
+"<br>Grazie in anticipo :)<br>"
+
+#: backend/Notices.php:123
+msgid "Click here to review"
+msgstr "Lascia la tua recensione"
+
+#: backend/Notices.php:131
+msgid ""
+"We have discovered a page builder on your website that may cause issues if "
+"used in conjunction with the glossary. Therefore, we recommend trying the "
+"free version initially and reviewing the <a href=\"https://docs.codeat.co/"
+"glossary/faq/#do-you-support-visual-composer\" "
+"target=\"_blank\">documentation</a> before submitting any support requests."
+msgstr ""
+"Abbiamo rilevato un page builder sul tuo sito internet che può creare "
+"problemi se utilizzato insieme a Glossary. Inoltre ti consigliamo ti "
+"utilizzare prima la versione gratuita e controllare la <a href=\"https://"
+"docs.codeat.co/glossary/faq/#do-you-support-visual-composer\" "
+"target=\"_blank\">documentazione</a> prima di aprire una richiesta di "
+"supporto."
+
+#: backend/Notices.php:137
+msgid ""
+"We have discovered a page builder on your website that may cause issues if "
+"used in conjunction with the glossary. Don't forget to check our <a "
+"href=\"https://docs.codeat.co/glossary/faq/#do-you-support-visual-composer\" "
+"target=\"_blank\">documentation</a> before submitting any support requests."
+msgstr ""
+"Abbiamo rilevato un page builder sul tuo sito internet che può creare "
+"problemi se utilizzato insieme a Glossary. Non dimenticare di controllare la "
+"<a href=\"https://docs.codeat.co/glossary/faq/#do-you-support-visual-"
+"composer\" target=\"_blank\">documentazione</a> prima di aprire una "
+"richiesta di supporto."
+
+#: backend/Notices.php:214
+msgid ""
+"The content and the excerpt of this term are both empty, this will generate "
+"empty Tooltips!"
+msgstr ""
+"Il contenuto e il riassunto di questo termine sono entrambi vuori questo "
+"creerà dei tooltip vuoti!"
+
+#: backend/Notices.php:247
+#, php-format
+msgid ""
+"The Glossary shortcode list is used in this page and has a daily cache, you "
+"need to <a href=\"%s\" target=\"_blank\">manually purge it</a> to see new "
+"terms without waiting!"
+msgstr ""
+"Lo shortcode del glossario list è utilizzata in questa pagina e ha una cache "
+"giornaliera, devi <a href=\"%s\" target=\"_blank\">svuotarla manualmente</a> "
+"per vedere i nuovi termini senza aspettare!"
+
+#: backend/Settings_Page.php:62 backend/Settings_Page.php:63
+#: backend/Settings_Page.php:101 backend/views/admin.php:37
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: backend/Settings_Page.php:142
+msgid "Transient purged successfully"
+msgstr "Transient svuotate correttamente"
+
+#: backend/views/admin.php:19
+msgid "Glossary General Settings"
+msgstr "Impostazioni Generali Glossary"
+
+#: backend/views/admin.php:23
+msgid "Update Terms Count"
+msgstr "Aggiorna Conteggio Termini"
+
+#: backend/views/admin.php:26
+msgid "Documentation: Getting Started"
+msgstr "Documentazione: Come cominciare"
+
+#: backend/views/admin.php:27
+msgid "Single Terms:"
+msgstr "Termini singoli:"
+
+#: backend/views/admin.php:28
+msgid "Additional Terms:"
+msgstr "Termini di ricerca aggiuntivi:"
+
+#: backend/views/admin.php:29
+msgid "Total Glossary Terms:"
+msgstr "Totale Termini di Glossario:"
+
+#: backend/views/admin.php:31
+msgid ""
+"The glossary terms amount count is scheduled once a day. Use this button if "
+"you need to manually calculate it."
+msgstr ""
+"Il calcolo totale dei termini del glossario è pianificato una volta al "
+"giorno. Usa questo pulsante se vuoi forzare il ricalcolo."
+
+#: backend/views/admin.php:41
+msgid "Customizer"
+msgstr "Customizer"
+
+#: backend/views/admin.php:45
+msgid "Extra"
+msgstr "Extra"
+
+#: backend/views/admin.php:46
+msgid "Shortcodes"
+msgstr "Shortcode"
+
+#: backend/views/admin.php:47
+msgid "Import/Export"
+msgstr "Importa/Esporta"
+
+#: backend/views/admin.php:50
+msgid "This feature is available only for PRO users."
+msgstr "Questa funzionalità è disponibile solo agli utenti PRO."
+
+#: backend/views/admin.php:57
+#, php-format
+msgid ""
+"<a href=\"%s\" target=\"_blank\">Not sure? check out Glossary's "
+"documentation</a>"
+msgstr ""
+"<a href=\"%s\" target=\"_blank\">Non sai di cosa si tratta? leggi la "
+"documentazione del Glossario</a>"
+
+#: backend/views/tabs/customizer.php:29
+msgid "Tooltip Preview"
+msgstr "Anteprima Tooltip"
+
+#: backend/views/tabs/customizer.php:30
+msgid "What you see is what you get!"
+msgstr "Quello che vedi è quello che otterrai!"
+
+#: backend/views/tabs/customizer.php:49
+msgid "Tooltip Text Style Settings"
+msgstr "Impostazioni Stile Testo Tooltip"
+
+#: backend/views/tabs/customizer.php:50
+msgid "Customize here the text and background options for your tooltips"
+msgstr "Personalizza il testo e le opzioni dei tuoi tooltip"
+
+#: backend/views/tabs/customizer.php:57 backend/views/tabs/customizer.php:96
+#: backend/views/tabs/customizer.php:128
+msgid "Color"
+msgstr "Colore"
+
+#: backend/views/tabs/customizer.php:65 backend/views/tabs/customizer.php:104
+msgid "Background Color"
+msgstr "Colore di sfondo"
+
+#: backend/views/tabs/customizer.php:73 backend/views/tabs/customizer.php:112
+msgid "Font Size in px"
+msgstr "Dimensioni font in px"
+
+#: backend/views/tabs/customizer.php:81
+msgid "Remove padding from terms on front-end"
+msgstr "Rimuove il padding dai termini nel frontend"
+
+#: backend/views/tabs/customizer.php:88
+msgid "Key Term Text Style Settings"
+msgstr "Impostazioni stile del testo dei termini"
+
+#: backend/views/tabs/customizer.php:89
+msgid ""
+"Customize here the text and background options for your key terms in your "
+"text - leave black to use your current link style"
+msgstr ""
+"Personalizza il testo e i colori dei tuoi termini nel testo, lascia bianco "
+"per usare lo stile predefinito dei link"
+
+#: backend/views/tabs/customizer.php:120
+msgid "Tooltip Link Style Settings"
+msgstr "Impostazioni Stile link dei Tooltip"
+
+#: backend/views/tabs/customizer.php:121
+msgid ""
+"Customize here the color for the links in the tooltip - leave black to use "
+"your current link style"
+msgstr ""
+"Personalizza il colore dei link dei tooltip, lascia vuoto per usare il tuo "
+"stile attuale"
+
+#: backend/views/tabs/customizer.php:136
+msgid "Mobile"
+msgstr "Mobile"
+
+#: backend/views/tabs/customizer.php:143
+msgid "Mobile Tooltip behavior"
+msgstr "Comportamento dei tooltip da mobile"
+
+#: backend/views/tabs/customizer.php:147
+msgid "Disable tooltips on mobile"
+msgstr "Disabilita i tooltip sul mobile"
+
+#: backend/views/tabs/customizer.php:148
+msgid "Responsive tooltips on mobile"
+msgstr "Tooltip responsive sul mobile"
+
+#: backend/views/tabs/customizer.php:149
+msgid "Default tooltips on mobile"
+msgstr "Tooltip sul mobile predefiniti"
+
+#: backend/views/tabs/extra.php:33
+msgid "OpenAI ChatGPT"
+msgstr "OpenAI ChatGPT"
+
+#: backend/views/tabs/extra.php:35
+msgid ""
+"A valid OpenAI key is needed. Please head over to <a href=\"https://docs."
+"codeat.co/glossary/chatgpt/\" target=\"_blank\">the dedicated documentation "
+"page</a>."
+msgstr ""
+"Una chiave OpenAI valida è necessaria. Controlla la <a href=\"https://docs."
+"codeat.co/glossary/chatgpt/\" target=\"_blank\">pagina di documentazione "
+"dedicata</a>."
+
+#: backend/views/tabs/extra.php:41
+msgid "Secret Key"
+msgstr "Chiave segreta"
+
+#: backend/views/tabs/extra.php:49
+msgid "Temperature"
+msgstr "Temperatura"
+
+#: backend/views/tabs/extra.php:57
+msgid "OpenAI Model"
+msgstr "Modello OpenAI"
+
+#: backend/views/tabs/extra.php:71
+msgid "Custom Fields"
+msgstr "Campi personalizzati"
+
+#: backend/views/tabs/extra.php:73
+msgid ""
+"Do you need to create custom fields for your key terms? If so, please head "
+"over to <a href=\"http://docs.codeat.co/glossary/premium-features/#how-to-"
+"add-custom-fields-to-your-glossary\" target=\"_blank\">the dedicated "
+"documentation page</a> to see how to best implement them."
+msgstr ""
+"Vuoi creare dei campi personalizzati per i tuoi termini? Controlla la <a "
+"href=\"http://docs.codeat.co/glossary/premium-features/#how-to-add-custom-"
+"fields-to-your-glossary\" target=\"_blank\">nostra documentazione</a> per "
+"vedere come implementarli."
+
+#: backend/views/tabs/extra.php:79
+msgid "Fields"
+msgstr "Campi"
+
+#: backend/views/tabs/extra.php:89
+msgid "Footnotes"
+msgstr "Note a piè di pagina"
+
+#: backend/views/tabs/extra.php:91
+msgid ""
+"Do you want footnotes with the links of your terms? Check our <a "
+"href=\"https://docs.codeat.co/glossary/premium-features/#footnotes\" "
+"target=\"_blank\">dedicated documentation page</a> how this feature works."
+msgstr ""
+"Vuoi utilizzare i piè di pagina con i link ai tuoi termini? Guarda la nostra "
+"<a href=\"https://docs.codeat.co/glossary/premium-features/#footnotes\" "
+"target=\"_blank\">documentazione</a> per scoprire come funziona."
+
+#: backend/views/tabs/extra.php:97
+msgid "Links in footnotes list"
+msgstr "Link nella lista di piè di pagina"
+
+#: backend/views/tabs/extra.php:104
+msgid "Excerpt in footnotes list"
+msgstr "Riassunto nella lista di piè di pagina"
+
+#: backend/views/tabs/extra.php:111
+msgid "Post content in footnotes list"
+msgstr "Contenuto articoli nella lista di piè di pagina"
+
+#: backend/views/tabs/extra.php:118
+msgid "Footnotes Title"
+msgstr "Titolo piè di pagina"
+
+#: backend/views/tabs/extra.php:121
+msgid "Change the default title on top of the Footnotes"
+msgstr "Cambia il titolo predefinito in cima alle note di piè di pagina"
+
+#: backend/views/tabs/impexp.php:16
+msgid "Export Settings"
+msgstr "Esporta le impostazioni"
+
+#: backend/views/tabs/impexp.php:17
+msgid ""
+"Here you can Import/Export Glossary's settings from/to other WordPress "
+"installations. For more details head over to our documentation"
+msgstr ""
+"Puoi importare/esportare le impostazioni del glossario da e per "
+"installazioni di WordPress differenti. Per maggiori informazioni controlla "
+"la nostra documentazione"
+
+#: backend/views/tabs/impexp.php:20
+msgid ""
+"Export the plugin settings for this site as a .json file. This allows you to "
+"easily import the configuration into another site."
+msgstr ""
+"Esporta le impostazioni del plugin di questo sito in un file .json, questo "
+"ti permetterà di importare facilmente la configurazione su un altro sito."
+
+#: backend/views/tabs/impexp.php:25
+msgid "Export"
+msgstr "Esporta"
+
+#: backend/views/tabs/impexp.php:32
+msgid "Import Settings"
+msgstr "Importa le impostazioni"
+
+#: backend/views/tabs/impexp.php:34
+msgid ""
+"Import the plugin settings from a .json file. This file can be obtained by "
+"exporting the settings on another site using the form above."
+msgstr ""
+"Importa le impostazioni da un file .json, questo file può essere ottenuto "
+"esportando le impostazioni da un altro sito usando la funzione analoga a "
+"quella qui sopra."
+
+#: backend/views/tabs/impexp.php:35
+msgid ""
+"If you are interested in obtaining the settings utilized in the <a "
+"href=\"https://demo.codeat.co/glossary\" target=\"_blank\">demonstration of "
+"our website</a>, you can acquire them through this <a href=\"https://docs."
+"codeat.co/glossary/gt-settings-demo-export.json\" target=\"_blank\">link</a> "
+"and import them using this box."
+msgstr ""
+"Se sei interessato a utilizzare le stesse impostazioni utilizzate nella <a "
+"href=\"https://demo.codeat.co/glossary\" target=\"_blank\">demo del nostro "
+"sito</a>, puoi scaricarlo da questo <a href=\"https://docs.codeat.co/"
+"glossary/gt-settings-demo-export.json\" target=\"_blank\">link</a> e "
+"importarle utilizzando questo box."
+
+#: backend/views/tabs/impexp.php:43
+msgid "Import"
+msgstr "Importa"
+
+#: backend/views/tabs/settings.php:32
+msgid "Settings for Post Types"
+msgstr "Opzioni per i Post Type"
+
+#: backend/views/tabs/settings.php:39
+msgid "Enable in:"
+msgstr "Abilita in:"
+
+#: backend/views/tabs/settings.php:45
+msgid "Home"
+msgstr "Home"
+
+#: backend/views/tabs/settings.php:46
+msgid "Category archive"
+msgstr "Archivio Categoria"
+
+#: backend/views/tabs/settings.php:47
+msgid "Tag archive"
+msgstr "Archivio Tag"
+
+#: backend/views/tabs/settings.php:48
+msgid "Glossary Archive"
+msgstr "Archivio Glossario"
+
+#: backend/views/tabs/settings.php:49
+msgid "Glossary Taxonomy"
+msgstr "Categoria Glossario"
+
+#: backend/views/tabs/settings.php:53
+msgid "RSS Feed"
+msgstr "Feed RSS"
+
+#: backend/views/tabs/settings.php:58
+msgid "Enable also in following archives:"
+msgstr "Abilita anche nei seguenti archivi:"
+
+#: backend/views/tabs/settings.php:66
+msgid "Alphabetical order in Glossary Archives"
+msgstr "Ordine alfabetico negli Archivi del glossario"
+
+#: backend/views/tabs/settings.php:73
+msgid "Add Alphabetical list on top of Glossary Archives"
+msgstr "Ordine alfabetico negli Archivi del glossario"
+
+#: backend/views/tabs/settings.php:74
+msgid ""
+"After the title of the archive will add a list like ABCDE... with links.<br>"
+msgstr ""
+"Dopo il titolo dell'archivio verrà aggiunto un indice come ABCDE... con link."
+"<br>"
+
+#: backend/views/tabs/settings.php:89
+msgid "Glossary Terms Slug"
+msgstr "Slug dei Termini del Glossario"
+
+#: backend/views/tabs/settings.php:90
+msgid "Terms and Categories cannot have the same custom slug."
+msgstr "Termini e Categorie non possono avere lo stesso slug personalizzato."
+
+#: backend/views/tabs/settings.php:98
+msgid "Glossary Category Slug"
+msgstr "Slug delle Categorie del Glossario"
+
+#: backend/views/tabs/settings.php:99
+msgid "Terms and Categories cannot have the same custom base slug."
+msgstr ""
+"Termini e Categorie non possono avere lo stesso slug personalizzato di base."
+
+#: backend/views/tabs/settings.php:108
+msgid "Singular Post Type Label"
+msgstr "Glossario Post Singolo Etichetta"
+
+#: backend/views/tabs/settings.php:109 backend/views/tabs/settings.php:118
+msgid ""
+"Change the name of the post type shown in both the backend and the frontend"
+msgstr "Cambia la voce del post type nel backend e anche nel frontend"
+
+#: backend/views/tabs/settings.php:117
+msgid "Plural Post Type Label"
+msgstr "Glossario Post Singolo Etichetta"
+
+#: backend/views/tabs/settings.php:127
+msgid "Disable Glossary post type in the frontend"
+msgstr "Disabilita il Glossario in questo post"
+
+#: backend/views/tabs/settings.php:128 backend/views/tabs/settings.php:136
+#: backend/views/tabs/settings.php:144
+msgid "Don't forget to flush the permalinks in the General Settings."
+msgstr "Non dimenticare di svuotare i permalink nelle impostazioni generali."
+
+#: backend/views/tabs/settings.php:135
+msgid "Disable Archive in the frontend for Glossary Terms"
+msgstr "Disabilita archivio nel frontend dei Termini del Glossario"
+
+#: backend/views/tabs/settings.php:143
+msgid "Disable Archive in the frontend for Glossary Categories"
+msgstr "Disabilita archivio frontend delle Categorie del Glossario"
+
+#: backend/views/tabs/settings.php:151
+msgid ""
+"Remove \"Archive/Category\" prefix from meta titles in Archive/Category pages"
+msgstr ""
+"Rimuovi il prefisso \"Archivio/Categoria\" dai titoli delle pagine di "
+"archivio"
+
+#: backend/views/tabs/settings.php:158
+msgid "Add total number of terms in the meta title of the page"
+msgstr "Aggiungi il numero totale dei termini nel titolo della pagina archivio"
+
+#: backend/views/tabs/settings.php:174
+msgid "Behaviour"
+msgstr "Comportamento"
+
+#: backend/views/tabs/settings.php:181
+msgid "Ignore &lt;span&gt; tags during the term search in the content"
+msgstr "Ignora i tag &lt;span&gt; durante la ricerca dei termini nel contenuto"
+
+#: backend/views/tabs/settings.php:184
+msgid ""
+"Use this option only when you see issues or conflicts with other plugins or "
+"component of the page. Or if you want to avoid to have more then 1 term in a "
+"single sentence."
+msgstr ""
+"Utilizza questa opzione solo quando vedi dei problemi o conflitti con altri "
+"plugin o componenti nella pagina. O se vuoi evitare di avere piú di un "
+"termine nella singola frase."
+
+#: backend/views/tabs/settings.php:188
+msgid "Link only the first occurrence of all key terms"
+msgstr "Inserisci il link alla prima occorrenza di tutti i termini chiave"
+
+#: backend/views/tabs/settings.php:189
+msgid ""
+"Prevents duplicating links and tooltips for all key terms that point to the "
+"same definition.<br>"
+msgstr ""
+"Previene la duplicazione dei link e dei tooltip per ogni termine chiave "
+"appartenente alla stessa definizione.<br>"
+
+#: backend/views/tabs/settings.php:203
+msgid "Link only the first occurrence of all the term keys"
+msgstr "Inserisci il link solo alla prima occorrenza di tutti i termini chiave"
+
+#: backend/views/tabs/settings.php:204
+msgid ""
+"Prevent duplicate links and tooltips for the same term, even if has more "
+"than one key, in a single post.<br>"
+msgstr ""
+"Previene la duplicazione dei link e dei tooltip per lo stesso termine, anche "
+"se hai più di una chiave in uno stesso post.<br>"
+
+#: backend/views/tabs/settings.php:219
+msgid "Add icon to external link"
+msgstr "Aggiungi un icona ai link esterni"
+
+#: backend/views/tabs/settings.php:220
+msgid "Add a css class with an icon to external link"
+msgstr "Aggiungi una classe css con una icona per tutti i link esterni"
+
+#: backend/views/tabs/settings.php:227
+msgid "Force Glossary terms to be included within WordPress search results"
+msgstr ""
+"Forza inclusione termini del glossario nei risultati di ricerca di WordPress"
+
+#: backend/views/tabs/settings.php:228
+msgid ""
+"Choose this option if you don't see your terms while searching for them in "
+"WordPress.<br>"
+msgstr ""
+"Scegli questa opzione se non vedi i tuoi termini mentre mentre effettui una "
+"ricerca in WordPress.<br>"
+
+#: backend/views/tabs/settings.php:234
+msgid "Match case-sensitive terms"
+msgstr "Ricerca dei termini \"Case Sensitive\""
+
+#: backend/views/tabs/settings.php:250
+msgid "Prevent term links from appearing on their own description page"
+msgstr ""
+"Previene che il termine venga linkato nella pagina descrizione del termine "
+"stesso"
+
+#: backend/views/tabs/settings.php:251
+msgid "Choose this option to avoid redundancy.<br>"
+msgstr "Scegli questa opzione per evitare ridondanza.<br>"
+
+#: backend/views/tabs/settings.php:258
+msgid "Open external link in a new window"
+msgstr "Apre il link esterno in una nuova finestra"
+
+#: backend/views/tabs/settings.php:259
+msgid ""
+"Choose this option to enable globally the opening of external link in a new "
+"tab.<br>"
+msgstr ""
+"Scegli questa opzione per abilitare globalmente l'apertura i link esterni in "
+"una nuova scheda.<br>"
+
+#: backend/views/tabs/settings.php:266
+msgid "Append string to injected URL"
+msgstr "Appendi una stringa nelle url iniettate"
+
+#: backend/views/tabs/settings.php:267
+msgid ""
+"Append a string to internal and external URLs for tracking purposes (E.g. "
+"utm_content=service)."
+msgstr ""
+"Appendi una stringa alle URL interne o esterne per scopi di tracciamenti "
+"(Es. utm_content=service)."
+
+#: backend/views/tabs/settings.php:283
+msgid "Settings for Tooltip"
+msgstr "Opzioni per i Tooltip"
+
+#: backend/views/tabs/settings.php:289
+msgid "Only Link"
+msgstr "Solo link"
+
+#: backend/views/tabs/settings.php:290
+msgid "Link and Tooltip"
+msgstr "Link e Tooltip"
+
+#: backend/views/tabs/settings.php:294
+msgid "Only Tooltip"
+msgstr "Solo tooltip"
+
+#: backend/views/tabs/settings.php:295
+msgid "Only Footnote"
+msgstr "Solo Note a piè di pagina"
+
+#: backend/views/tabs/settings.php:300
+msgid "Enable tooltips on terms"
+msgstr "Abilita i tooltip dei termini del Glossario"
+
+#: backend/views/tabs/settings.php:301
+msgid "Tooltip will popup on hover."
+msgstr "Un tooltip apparirà passando sopra con il cursore."
+
+#: backend/views/tabs/settings.php:318
+msgid "Tooltip style"
+msgstr "Stile del Tooltip"
+
+#: backend/views/tabs/settings.php:319
+msgid ""
+"The featured image will only show with the Classic and all the PRO themes."
+"<br>"
+msgstr ""
+"L'immagine predefinita sarà mostrata solo nel tema Classic e in tutti i temi "
+"PRO.<br>"
+
+#: backend/views/tabs/settings.php:327
+msgid "Enable image in tooltips"
+msgstr "Abilita l'immagine nel Tooltip"
+
+#: backend/views/tabs/settings.php:333
+msgid "Remove \"more\" link in tooltips"
+msgstr "Rimuovi il link \"altro\" nei tooltip"
+
+#: backend/views/tabs/settings.php:349
+msgid "Change \"more\" link text in tooltips"
+msgstr "Cambia il link \"altro\" nei tooltip"
+
+#: backend/views/tabs/settings.php:365
+msgid "Excerpt"
+msgstr "Riassunto"
+
+#: backend/views/tabs/settings.php:372
+msgid "Limit the excerpt by words"
+msgstr "Limita il riassunto per parole"
+
+#: backend/views/tabs/settings.php:373
+msgid "As opposed to characters"
+msgstr "Al contrario sono caratteri"
+
+#: backend/views/tabs/settings.php:380
+msgid "Excerpt length in characters or words"
+msgstr "Lunghezza del Riassunto in caratteri o parole"
+
+#: backend/views/tabs/settings.php:381
+msgid ""
+"Refers to selection above. If value is 0 the complete content will be used."
+"<br>"
+msgstr ""
+"Riguardo le selezioni soprastanti. Se il valore è 0 il contenuto completo "
+"verrà utilizzato.<br>"
+
+#: backend/views/tabs/settings.php:389
+msgid "Disable ... on excerpt"
+msgstr "Disabilita ... nel riassunto"
+
+#: backend/views/tabs/shortcodes.php:16
+msgid "Purge the shortcode/widget plugin cache"
+msgstr "Svuota la cache degli shortcode/widget"
+
+#: backend/views/tabs/shortcodes.php:19
+msgid ""
+"Glossary uses a <b>cache</b>, based on WordPress transients to improve the "
+"performance in shortcodes or widgets. Usually they last 24 hours but is "
+"possible to clean them manually pressing this button. [<a href=\"https://"
+"docs.codeat.co/glossary/faq/#how-can-i-clean-up-plugin-transients\" "
+"target=\"_blank\">Documentation</a>]"
+msgstr ""
+"Glossary utilizza una <b>cache</b>, basata sulle transient native di "
+"WordPress per migliorare le performance negli shortcode o widget. "
+"Solitamente dura 24 ore ma si può svuotare manualmente premendo questo "
+"pulsante. [<a href=\"https://docs.codeat.co/glossary/faq/#how-can-i-clean-up-"
+"plugin-transients\" target=\"_blank\">Documentazione</a>]"
+
+#: backend/views/tabs/shortcodes.php:20
+msgid "Purge plugin trasients"
+msgstr "Svuota transient dei plugin"
+
+#: backend/views/tabs/shortcodes.php:24
+msgid "Shortcodes available in Free version"
+msgstr "Shortcode disponibili nella versione gratuita"
+
+#: backend/views/tabs/shortcodes.php:28
+msgid ""
+"This shortcode will generate an index for your Glossary that will create an "
+"indexed page, for all your key terms."
+msgstr ""
+"Questo shortcode genererà un indice per il tuo glossario che creerà una "
+"pagina indice, per tutti i tuoi termini."
+
+#: backend/views/tabs/shortcodes.php:29 backend/views/tabs/shortcodes.php:38
+msgid "Cached"
+msgstr "Con cache"
+
+#: backend/views/tabs/shortcodes.php:29
+msgid "This shortcode will generate a list of your glossary's terms."
+msgstr "Questo shortcode genererà una lista dei tuoi termini del glossario."
+
+#: backend/views/tabs/shortcodes.php:35
+msgid "Shortcodes available in PRO version"
+msgstr "Shortcode disponibili nella versione PRO"
+
+#: backend/views/tabs/shortcodes.php:38
+msgid ""
+"This PRO shortcode will generate an index for your Glossary that will create "
+"an indexed page."
+msgstr "Questo shortcode PRO genererà un indice per il tuo glossario."
+
+#: backend/views/tabs/shortcodes.php:39
+msgid ""
+"To parse a specific portion of content, wrap it inside this shortcode. This "
+"will enforce rendition with all terms known to Glossary linked therein. "
+"Useful in cases where Page Builders like Visual Composers or other "
+"components interfere with proper execution."
+msgstr ""
+"Per elaborare una specifica parte di testo, questo shortcode deve contenere "
+"il testo. Questo forzerá Glossary per elaborare il contenuto con tutti i "
+"termini conosciuti. Utile in quei casi dove Page Builder o Visual Composer o "
+"altri componenti interferiscono con la normale esecuzione."
+
+#: backend/views/tabs/shortcodes.php:40
+msgid "To prevent Glossary from processing a term, wrap with this shortcode."
+msgstr ""
+"Per prevenire l'elaborazione di un termine, circondalo con questo shortcode."
+
+#: engine/Initialize.php:156
+msgid ""
+"Glossary is on production environment with missing `composer dumpautoload -"
+"o` that will improve the performance on autoloading itself."
+msgstr ""
+"Glossary è in ambiente di produzione con `composer dumpautoload -o` mancante "
+"che migliorerebbe le performance sul suo caricamento."
+
+#: frontend/Core/Alphabetical_Index_Bar.php:342
+#: integrations/Widgets/Search.php:93 integrations/Widgets/Search.php:94
+#: internals/Blocks/ListIndex.php:121
+msgid "Search"
+msgstr "Cerca"
+
+#: frontend/Core/Generate_Excerpt.php:138
+msgid "More"
+msgstr "Leggi"
+
+#: frontend/Core/Type/Footnote.php:57
+msgid "List of terms"
+msgstr "Lista degli? termini"
+
+#: frontend/Theme/Archive.php:99 frontend/Theme/Archive.php:100
+msgid "Archives"
+msgstr "Archivio"
+
+#: frontend/Theme/Archive.php:143
+msgid "terms"
+msgstr "termini"
+
+#: frontend/Theme/Genesis.php:78 frontend/Theme/Genesis.php:84
+msgid "[Read more...]"
+msgstr "[Leggi Tutto...]"
+
+#: integrations/ACF.php:59 integrations/ACF.php:85
+msgid "Add support for Glossary in your fields"
+msgstr "Aggiungi il supporto per il Glossario nei tuoi campi"
+
+#: integrations/ACF.php:84 internals/PostTypes.php:69
+msgid "Glossary"
+msgstr "Glossario"
+
+#: integrations/CMB.php:73
+msgid ""
+"You must empty the cache, if you have a caching system, in order to apply "
+"changes!"
+msgstr ""
+"Se hai un sistema di cache devi svuotarla per poter applicare i cambiamenti!"
+
+#: integrations/CMB.php:97
+msgid ""
+"You must flush the permalink if you changed the slug, go on Settings-"
+">Permalink and press Save changes!"
+msgstr ""
+"Devi svuotare i permalink se hai cambiato gli slug, va in Impostazioni-"
+">Permalink e premi Salva le modifiche!"
+
+#: integrations/CMB_Fields/CMB2_OpenAI_Prompt.php:57
+msgid "Generate Term's content"
+msgstr "Genera il contenuto del termine"
+
+#: integrations/CMB_Metabox.php:57
+msgid "Glossary Post Override"
+msgstr "Cambia il comportamento di Glossary"
+
+#: integrations/CMB_Metabox.php:67
+msgid "Disable Glossary for this post"
+msgstr "Disabilita il Glossario in questo post"
+
+#: integrations/CMB_Metabox.php:84
+msgid "Glossary Auto-Link settings"
+msgstr "Impostazioni auto-link del Glossario"
+
+#: integrations/CMB_Metabox.php:95 integrations/Elementor.php:93
+msgid "Autogenerate the term content with ChatGPT"
+msgstr "Auto genera il contenuto del termine con ChatGPT"
+
+#: integrations/CMB_Metabox.php:103
+msgid "Additional key terms for this definition"
+msgstr "Termini chiave aggiuntivi per questa definizione"
+
+#: integrations/CMB_Metabox.php:105
+msgid "Case-insensitive. To add more than one, separate them with commas"
+msgstr ""
+"Case Insensitive. Per aggiungere più di un termine, separare i valori con la "
+"virgola"
+
+#: integrations/CMB_Metabox.php:114
+msgid "What type of link?"
+msgstr "Che tipo di link?"
+
+#: integrations/CMB_Metabox.php:126
+msgid "Link to external URL"
+msgstr "Link ad URL esterna"
+
+#: integrations/CMB_Metabox.php:128
+msgid ""
+"If this is left blank, the previous options defaults back and key term is "
+"linked to internal definition page"
+msgstr ""
+"Se lasciato vuoto, l'opzioni precedenti saranno di default e i termini "
+"collegati al link interno della definizione"
+
+#: integrations/CMB_Metabox.php:138
+msgid "Internal"
+msgstr "Interno"
+
+#: integrations/CMB_Metabox.php:139
+msgid "Select a post of your site"
+msgstr "Seleziona un post type del tuo sito"
+
+#: integrations/CMB_Metabox.php:151
+msgid "Open all the injected links in a new window"
+msgstr "Apri tutti i link esterni in una nuova finestra"
+
+#: integrations/CMB_Metabox.php:160
+msgid "Mark this link as \"No Follow\""
+msgstr "Marca questo link come \"No Follow\""
+
+#: integrations/CMB_Metabox.php:162
+msgid ""
+"To learn more about No-Follow links, check <a href=\"https://support.google."
+"com/webmasters/answer/96569?hl=en\">this article</a>"
+msgstr ""
+"Per scoprirne di più sui link No-Follow, leggi <a href=\"https://support."
+"google.com/webmasters/answer/96569?hl=en\">questo articolo</a>"
+
+#: integrations/CMB_Metabox.php:172
+msgid "Mark this link as \"Sponsored\""
+msgstr "Marca questo link come \"Sponsored\""
+
+#: integrations/CMB_Metabox.php:174
+msgid ""
+"To learn more about Sponsored links, check <a href=\"https://developers."
+"google.com/search/docs/advanced/guidelines/qualify-outbound-links\">this "
+"article</a>"
+msgstr ""
+"Per scoprirne di più sui link No-Follow, leggi <a href=\"https://support."
+"google.com/webmasters/answer/96569?hl=en\">questo articolo</a>"
+
+#: integrations/CMB_Metabox_Premium.php:76
+msgid "Select specific glossary categories"
+msgstr "Seleziona Categorie Glossario"
+
+#: integrations/CMB_Metabox_Premium.php:78
+msgid ""
+"By selecting one or more categories, only terms belonging to these will be "
+"linked"
+msgstr ""
+"Selezionando una o più categorie, solo i termini appartenenti a queste "
+"verrano linkati"
+
+#: integrations/CMB_Metabox_Premium.php:104
+msgid "Glossary Custom Fields"
+msgstr "Campi Personalizzati Glossario"
+
+#: integrations/Elementor.php:101
+msgid "Generate Content"
+msgstr "Genera contenuto"
+
+#: integrations/Widgets/A2Z.php:25
+msgid "Glossary Alphabetical Index"
+msgstr "Indice Alfabetico del Glossario"
+
+#: integrations/Widgets/A2Z.php:26
+msgid "Alphabetical ordered letter list of Glossary terms"
+msgstr "Lista Alfabetica dei Termini di Glossario"
+
+#: integrations/Widgets/A2Z.php:32
+msgid "The content of this widget is cached."
+msgstr "Il contenuto di questo widget è sotto cache."
+
+#: integrations/Widgets/A2Z.php:32
+msgid "Documentation"
+msgstr "Documentazione"
+
+#: integrations/Widgets/A2Z.php:38 integrations/Widgets/Categories.php:28
+#: integrations/Widgets/Last_Glossaries.php:34
+#: integrations/Widgets/Search.php:33
+msgid "Title"
+msgstr "Titolo"
+
+#: integrations/Widgets/A2Z.php:39 integrations/Widgets/Categories.php:29
+#: integrations/Widgets/Last_Glossaries.php:35
+#: integrations/Widgets/Search.php:34
+msgid "Enter the widget title."
+msgstr "Inserisci il titolo del widget."
+
+#: integrations/Widgets/A2Z.php:47
+msgid "Show Counts"
+msgstr "Mostra il conteggio dei termini"
+
+#: integrations/Widgets/A2Z.php:52 integrations/Widgets/Last_Glossaries.php:53
+msgid "Category"
+msgstr "Categoria"
+
+#: integrations/Widgets/A2Z.php:53 integrations/Widgets/Last_Glossaries.php:54
+msgid "Filter from Glossary category."
+msgstr "Filtra per Categorie Glossario."
+
+#: integrations/Widgets/A2Z.php:62 integrations/Widgets/Categories.php:40
+#: integrations/Widgets/Last_Glossaries.php:60
+msgid "Choose theme"
+msgstr "Scegli il tema"
+
+#: integrations/Widgets/A2Z.php:67 integrations/Widgets/Categories.php:45
+#: integrations/Widgets/Last_Glossaries.php:65
+msgid "Hyphen"
+msgstr "Trattino"
+
+#: integrations/Widgets/A2Z.php:71
+msgid "Slash"
+msgstr "Slash"
+
+#: integrations/Widgets/A2Z.php:75 integrations/Widgets/Categories.php:53
+#: integrations/Widgets/Last_Glossaries.php:73
+msgid "Dot"
+msgstr "Puntato"
+
+#: integrations/Widgets/A2Z.php:79
+msgid "Underlined"
+msgstr "Sottolineato"
+
+#: integrations/Widgets/A2Z.php:83
+msgid "Tiled"
+msgstr "Tiled"
+
+#: integrations/Widgets/Categories.php:21
+#: integrations/Widgets/Categories.php:33
+msgid "Glossary Categories"
+msgstr "Categorie Glossario"
+
+#: integrations/Widgets/Categories.php:22
+msgid "List of Glossary Categories"
+msgstr "Lista di categorie del glossario"
+
+#: integrations/Widgets/Categories.php:49
+#: integrations/Widgets/Last_Glossaries.php:69
+msgid "Arrow"
+msgstr "Freccia"
+
+#: integrations/Widgets/Categories.php:57
+#: integrations/Widgets/Last_Glossaries.php:77
+msgid "Tilde"
+msgstr "Tilde"
+
+#: integrations/Widgets/Last_Glossaries.php:27
+msgid "Glossary Latest Terms"
+msgstr "Ultimi Termini di Glossario"
+
+#: integrations/Widgets/Last_Glossaries.php:28
+msgid "List of latest Glossary Terms"
+msgstr "Lista degli ultimi termini del glossario"
+
+#: integrations/Widgets/Last_Glossaries.php:39
+msgid "Latest Glossary Terms"
+msgstr "Ultimi Termini del Glossario"
+
+#: integrations/Widgets/Last_Glossaries.php:44
+msgid "Number"
+msgstr "Numero"
+
+#: integrations/Widgets/Last_Glossaries.php:45
+msgid "The number of terms to be shown."
+msgstr "Il numero di termini da mostrare."
+
+#: integrations/Widgets/Search.php:26
+msgid "Glossary Search Terms"
+msgstr "Cerca Termini di Glossario"
+
+#: integrations/Widgets/Search.php:27
+msgid "Search in Glossary Terms"
+msgstr "Cerca nei Termini del Glossario"
+
+#: integrations/Widgets/Search.php:42
+msgid "Add a dropdown for category based filtering"
+msgstr "Aggiungi elenco a discesa per il filtro categoria"
+
+#: integrations/Widgets/Search.php:81 integrations/Widgets/Search.php:89
+msgid "Select Glossary Category"
+msgstr "Seleziona Categorie Glossario"
+
+#: internals/Blocks/ListIndex.php:45 internals/Blocks/ListIndex.php:123
+msgid "Disabled"
+msgstr "Disabilitato"
+
+#: internals/Blocks/ListIndex.php:61
+msgid "Glossary Index"
+msgstr "Termine di Glossario"
+
+#: internals/Blocks/ListIndex.php:66
+msgid "Glossary List"
+msgstr "Glossario"
+
+#: internals/Blocks/ListIndex.php:70
+msgid "Letter Anchor"
+msgstr "Link alla lettera"
+
+#: internals/Blocks/ListIndex.php:71
+msgid ""
+"Regulates how the letter is linked to its anchorage: within the same list or "
+"to its archive page"
+msgstr ""
+"Gestisce come le lettere sono linkate tramite l'ancora: nella stessa lista o "
+"alla pagina di archivio"
+
+#: internals/Blocks/ListIndex.php:78
+msgid "Term Anchor"
+msgstr "Ancora del termine"
+
+#: internals/Blocks/ListIndex.php:79
+msgid "The terms in the list will have links"
+msgstr "I termini nella lista includeranno dei link"
+
+#: internals/Blocks/ListIndex.php:86
+msgid "Custom Term Url"
+msgstr "Campi personalizzati"
+
+#: internals/Blocks/ListIndex.php:87
+msgid "Print the Internal/External URL set in the term"
+msgstr "Stampa la URL interna/esterna impostata nel termine"
+
+#: internals/Blocks/ListIndex.php:94
+msgid "Alphabetical Bar Letters visibility"
+msgstr "Visibilità della barra delle lettere alfabetica"
+
+#: internals/Blocks/ListIndex.php:95
+msgid "Show all letters, including those containing no terms"
+msgstr "Mostra tutte le lettere incluse quelle senza termini"
+
+#: internals/Blocks/ListIndex.php:102
+msgid "Letters and their terms to show"
+msgstr "Il numero di termini da mostrare"
+
+#: internals/Blocks/ListIndex.php:103
+msgid "If you need to enter more than one letter, separate them with a comma."
+msgstr ""
+"Case Insensitive. Per aggiungere più di un termine, separare i valori con la "
+"virgola."
+
+#: internals/Blocks/ListIndex.php:110
+msgid "Theme"
+msgstr "Tema"
+
+#: internals/Blocks/ListIndex.php:112
+msgid "Default"
+msgstr "Predefinito"
+
+#: internals/Blocks/ListIndex.php:113
+msgid "Grid"
+msgstr "Griglia"
+
+#: internals/Blocks/ListIndex.php:114
+msgid "Summary"
+msgstr "Sommario"
+
+#: internals/Blocks/ListIndex.php:124
+msgid "Scroll"
+msgstr "Scorrimento"
+
+#: internals/Blocks/ListIndex.php:125
+msgid "Bottom Scroll"
+msgstr "Scorrimento dal basso"
+
+#: internals/Blocks/ListIndex.php:126
+msgid "No Scroll"
+msgstr "Senza scorrimento"
+
+#: internals/Blocks/ListIndex.php:134
+msgid "Taxonomy"
+msgstr "Tassonomia"
+
+#: internals/Blocks/ListIndex.php:135
+msgid "Allows you to filter your list through Glossary taxonomies"
+msgstr ""
+"Ti permette di filtrare la tua lista utilizzando le tassonomie del Glossario"
+
+#: internals/Blocks/ListIndex.php:143
+msgid "Show the content"
+msgstr "Mostra il contenuto"
+
+#: internals/Blocks/ListIndex.php:144
+msgid "Show the content alongside the term"
+msgstr "Mostra il contenuto insieme al termine"
+
+#: internals/Blocks/ListIndex.php:151
+msgid "Show the excerpt"
+msgstr "Mostra il riassunto"
+
+#: internals/Blocks/ListIndex.php:152
+msgid "Show the excerpt alongside the term"
+msgstr "Mostra il riassunto insieme al termine"
+
+#: internals/PostTypes.php:68
+msgid "Glossary Term"
+msgstr "Termine di Glossario"
+
+#: internals/PostTypes.php:110
+msgid "Date"
+msgstr "Data"
+
+#: internals/PostTypes.php:161
+msgid "Categories"
+msgstr "Categorie"
+
+#: internals/Shortcode_Premium.php:114
+msgid ""
+"The preview of this block is limited for performance reasons. Check out the "
+"editor's full page preview if you have more than 30 terms to display."
+msgstr ""
+"L'anteprima del blocco è limitata per motivi di performance. Verifica "
+"l'anteprima completa della pagina se hai più di 30 termini da visualizzare."
+
+#: rest/ChatGPT.php:70
+msgid "Invalid nonce"
+msgstr "Nonce non valida"
+
+#: rest/ChatGPT.php:113
+msgid "Request not accepted: "
+msgstr "Richiesta non accettata: "
+
+#~ msgid ""
+#~ "The content of this widget is cached, check <a href=\"https://docs.codeat."
+#~ "co/glossary/faq/#how-can-i-clean-up-plugin-transients\" "
+#~ "target=\"_blank\">our documentation</a>!"
+#~ msgstr ""
+#~ "Il contenuto di questo widget è cachato, controlla la <a href=\"https://"
+#~ "docs.codeat.co/glossary/faq/#how-can-i-clean-up-plugin-transients\" "
+#~ "target=\"_blank\">documentazione</a>!"
+
+#~ msgid "Generate Term"
+#~ msgstr "Genera termine"
+
+#~ msgid "Generate term's content from ChatGPT"
+#~ msgstr "Genera il contenuto del termine da ChatGPT"
+
+#~ msgid "A valid OpenAI key is needed"
+#~ msgstr "Una chiave valida per OpenAI è necessaria"
+
+#~ msgid ""
+#~ "This parse a specific content wrap with this shortcode, useful for Visual "
+#~ "Composer or Page Builder."
+#~ msgstr ""
+#~ "Questo elaborerà un contenuto specifico con questo shortcode, utile per "
+#~ "Visual Composer o Page Builder."
