@@ -1,9 +1,10 @@
-
-
 $(document).ready(function() {
     var isMobileOrTablet = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     function showTooltip(event, $this, title) {
+        // Save the title into a variable
+        var savedTitle = title;
+
         // Create a tooltip element if it doesn't exist
         if ($('#tooltip').length === 0) {
             $('body').append('<div id="tooltip" style="position: absolute; display: none; background: #fff; border: 1px solid #ccc; padding: 10px; z-index: 1000;"></div>');
@@ -15,48 +16,43 @@ $(document).ready(function() {
             method: 'POST',
             data: {
                 action: 'get_post_excerpt', // Custom action name
-                title: title,
+                title: savedTitle, // Pass the saved title to the AJAX request
                 nonce: ajax_object.nonce // Include the nonce
             },
             success: function(response) {
                 if (response.success) {
                     var glossaryUrl = response.data.glossary_url; // Assuming the response contains the glossary URL
+        
+                    // Check if the device is mobile or tablet
+                    var isMobileOrTablet = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-                    if (isMobileOrTablet) {
-                        // Create the tooltip content with "X" and "more" links on mobile
-                        var tooltipContent = `
-                            <div>
-                                <a href="#" id="close-tooltip" style="float: right;">X</a>
-                                <div>${response.data.excerpt}</div>
-                                <a href="${glossaryUrl}" id="more-link">More</a>
-                            </div>
-                        `;
-                    } else {
-                        var tooltipContent = response.data.excerpt;
-                        $this.attr('href', glossaryUrl);
-                    }
-
+                    // Create the tooltip content
+                    var tooltipContent = `
+                        <div>
+                            ${isMobileOrTablet ? '<a href="#" id="close-tooltip" style="float: right;">X</a>' : ''}
+                            <div>${response.data.excerpt}</div>
+                            ${isMobileOrTablet ? `<a href="${glossaryUrl}" id="more-link">More</a>` : ''}
+                        </div>
+                    `;
+            
                     $('#tooltip').html(tooltipContent).css({
                         top: event.pageY + 10 + 'px',
                         left: event.pageX + 10 + 'px'
                     }).fadeIn();
-
-                    // Remove the title attribute to prevent the default tooltip
-                    $this.removeAttr('title');
-
-
+        
                     if (isMobileOrTablet) {
                         // Handle close tooltip click
                         $('#close-tooltip').off('click').on('click', function(e) {
                             e.preventDefault();
                             $('#tooltip').fadeOut();
                         });
+        
                         // Handle tooltip click to navigate to the permalink URL
-                        $('#more-link').on('click', function (e) {
+                        $('#more-link').off('click').on('click', function(e) {
                             e.preventDefault();
                             window.location = glossaryUrl;
                         });
-                    } 
+                    }
                 } else {
                     console.error(response.data.message);
                 }
@@ -75,31 +71,33 @@ $(document).ready(function() {
             showTooltip(event, $this, title);
         });
     } else {
-        $('a.story-link').hover(
-            function(event) {
-                var $this = $(this);
-                var title = $this.attr('title'); // Get the title attribute
-                showTooltip(event, $this, title);
-            },
-            function() {
-                // Hide the glossary tooltip when the mouse leaves the link
-                $('#tooltip').fadeOut();
-            }
-        );
-    }
-    if (isMobileOrTablet) {
-        // Hide the glossary tooltip when clicking outside of it
-        $(document).on('click', function (event) {
-            if (!$(event.target).closest('#tooltip, a.story-link').length) {
-                $('#tooltip').fadeOut();
+        $('a.story-link').on('mouseenter', function(event) {
+            var $this = $(this);
+            var title = $this.attr('title'); // Get the title attribute
+
+            // Store the original title in a data attribute and remove it to prevent the default tooltip
+            $this.data('original-title', title).removeAttr('title');
+
+            showTooltip(event, $this, title);
+        });
+
+        $('a.story-link').on('mouseleave', function() {
+            // Hide the glossary tooltip when the mouse leaves the link
+            $('#tooltip').fadeOut();
+
+            // Restore the original title attribute
+            var $this = $(this);
+            var originalTitle = $this.data('original-title');
+            if (originalTitle) {
+                $this.attr('title', originalTitle);
             }
         });
-    } else {
-        // Keep tooltip visible when hovering over it
-        $(document).on('mouseenter', '#tooltip', function() {
-            $(this).stop(true, true).show();
-        }).on('mouseleave', '#tooltip', function() {
-            $(this).fadeOut();
-        }); 
     }
+
+    // Hide the glossary tooltip when clicking outside of it
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('#tooltip, a.story-link').length) {
+            $('#tooltip').fadeOut();
+        }
+    });
 });
