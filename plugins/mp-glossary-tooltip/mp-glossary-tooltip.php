@@ -2,7 +2,7 @@
 /*
  * Plugin Name: MP Glossary Tooltip
  * Description: Glossary Tooltip on timeline that links to glossary page
- * Version: 2.5
+ * Version: 2.7
  * Author: Monkey Puzzle LLC
  * Author URI: http://monkeypuzzle.co
  * Requires at least: ?

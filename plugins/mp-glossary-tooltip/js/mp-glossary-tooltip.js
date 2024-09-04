@@ -22,36 +22,51 @@ $(document).ready(function() {
             success: function(response) {
                 if (response.success) {
                     var glossaryUrl = response.data.glossary_url; // Assuming the response contains the glossary URL
-        
-                    // Check if the device is mobile or tablet
-                    var isMobileOrTablet = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-                    // Create the tooltip content
-                    var tooltipContent = `
-                        <div>
-                            ${isMobileOrTablet ? '<a href="#" id="close-tooltip" style="float: right;">X</a>' : ''}
-                            <div>${response.data.excerpt}</div>
-                            ${isMobileOrTablet ? `<a href="${glossaryUrl}" id="more-link">More</a>` : ''}
-                        </div>
-                    `;
-            
-                    $('#tooltip').html(tooltipContent).css({
-                        top: event.pageY + 10 + 'px',
-                        left: event.pageX + 10 + 'px'
-                    }).fadeIn();
-        
                     if (isMobileOrTablet) {
+                        // Create the tooltip content with "X" and "more" links on mobile
+                        var tooltipContent = `
+                            <div>
+                                <a href="#" id="close-tooltip" style="float: right;">X</a>
+                                <div>${response.data.excerpt}</div>
+                                <a href="${glossaryUrl}" id="more-link">More</a>
+                            </div>
+                        `;
+                    } else {
+                        var tooltipContent = `<div>${response.data.excerpt}</div>`;
+                        $this.attr('href', glossaryUrl);
+                    }
+
+                    $('#tooltip').html(tooltipContent);
+
+                    if (isMobileOrTablet) {
+                        // Center the tooltip on the mobile screen
+                        $('#tooltip').css({
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            position: 'fixed'
+                        }).fadeIn();
+
                         // Handle close tooltip click
                         $('#close-tooltip').off('click').on('click', function(e) {
                             e.preventDefault();
                             $('#tooltip').fadeOut();
                         });
-        
+
                         // Handle tooltip click to navigate to the permalink URL
                         $('#more-link').off('click').on('click', function(e) {
                             e.preventDefault();
                             window.location = glossaryUrl;
                         });
+                    } else {
+                        // Position the tooltip near the mouse cursor on desktop
+                        $('#tooltip').css({
+                            top: event.pageY + 10 + 'px',
+                            left: event.pageX + 10 + 'px',
+                            transform: 'none',
+                            position: 'absolute'
+                        }).fadeIn();
                     }
                 } else {
                     console.error(response.data.message);
