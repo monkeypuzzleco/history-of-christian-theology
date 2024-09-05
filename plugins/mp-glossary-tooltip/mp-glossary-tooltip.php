@@ -79,7 +79,7 @@ class MP_glossary_tooltip {
                 $query->the_post();
         
 
-                $excerpt = $this->wp_trim_characters(get_the_content()); // Adjust the word count as needed
+                $excerpt = $this->wp_trim_words(get_the_content()); // Adjust the word count as needed
                 $post_url = get_permalink();
     
                 wp_send_json_success(['excerpt' => $excerpt, 'glossary_url' => $post_url]);
@@ -92,6 +92,15 @@ class MP_glossary_tooltip {
         } else {
             wp_send_json_error(['message' => 'Invalid request']);
         }
+    }
+
+    private function wp_trim_words($text, $more = '...') {
+        $limit = self::$excerpt_limit;
+        $words = explode(' ', $text);
+        if (count($words) > $limit) {
+            $text = implode(' ', array_slice($words, 0, $limit)) . $more;
+        }
+        return $text;
     }
     private function wp_trim_characters($text, $more = '...') {
         if (mb_strlen($text) > self::$excerpt_limit) {

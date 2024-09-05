@@ -42,10 +42,12 @@ $(document).ready(function() {
                     if (isMobileOrTablet) {
                         // Center the tooltip on the mobile screen
                         $('#tooltip').css({
-                            top: '50%',
-                            left: '50%',
-                            transform: 'translate(-50%, -50%)',
-                            position: 'fixed'
+                            top: '0',
+                            left: '0',
+                            height: 'auto',
+                            width: '100%',
+                         //   transform: 'translate(-50%, -50%)',
+                            position: 'fixed'  // was fixed
                         }).fadeIn();
 
                         // Handle close tooltip click
